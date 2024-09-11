@@ -1,0 +1,9 @@
+[submodule "taxonomy"]
+	path = taxonomy
+	url = https://github.com/murthyrudra/taxonomy.git
+[submodule "sdg"]
+	path = sdg
+	url = https://github.com/murthyrudra/sdg.git
+[submodule "schema"]
+	path = schema
+	url = https://github.com/murthyrudra/schema.git
