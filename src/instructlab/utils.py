@@ -295,7 +295,18 @@ def _validate_documents(
             if not opened_files:
                 raise TaxonomyReadingException("Couldn't find knowledge documents")
         except (OSError, exc.GitCommandError, FileNotFoundError) as e:
-            raise e
+            if os.path.exists(source.get("folder")):
+                logger.debug("Processing files...")
+                opened_files = False
+                for pattern in file_patterns:
+                    for file_path in glob.glob(os.path.join(source.get("folder"), pattern)):
+                        if os.path.isfile(file_path) and file_path.endswith(".md"):
+                            with open(file_path, "r", encoding="utf-8"):
+                                # Success! we could open the file.
+                                # We don't actually care about the contents, though.
+                                opened_files = True
+            else:
+                raise e
 
 
 def git_clone_checkout(
