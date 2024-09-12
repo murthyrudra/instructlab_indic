@@ -237,11 +237,12 @@ DEFAULTS = _InstructlabDefaults()
 
 
 # Model families understood by ilab
-MODEL_FAMILIES = {"merlinite", "mixtral"}
+MODEL_FAMILIES = {"merlinite", "mixtral", "phi"}
 
 # Map model names to their family
 MODEL_FAMILY_MAPPINGS = {
     "granite": "merlinite",
+    "phi": "phi",
 }
 
 
