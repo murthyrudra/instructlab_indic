@@ -255,6 +255,7 @@ class SourceDict(TypedDict):
     repo: str
     commit: str
     patterns: List[str]
+    folder: str
 
 
 def _validate_documents(
