@@ -88,7 +88,7 @@ class _InstructlabDefaults:
     # TODO: these constants should be removed, they should not leak out
     NUM_CPUS = 10
     CHUNK_WORD_COUNT = 1000
-    CONNECTION_TIMEOUT = httpx.Timeout(timeout=30.0)
+    CONNECTION_TIMEOUT = httpx.Timeout(timeout=3600.0)
     # use spawn start method, fork is not thread-safe
     MULTIPROCESSING_START_METHOD = "spawn"
     SDG_PIPELINE = "simple"
@@ -237,12 +237,13 @@ DEFAULTS = _InstructlabDefaults()
 
 
 # Model families understood by ilab
-MODEL_FAMILIES = {"merlinite", "mixtral", "phi"}
+MODEL_FAMILIES = {"merlinite", "mixtral", "phi", "llama"}
 
 # Map model names to their family
 MODEL_FAMILY_MAPPINGS = {
     "granite": "merlinite",
     "phi": "phi",
+    "llama": "llama",
 }
 
 

@@ -1,36 +1,56 @@
-system: You are a very knowledgeable AI Assistant that will faithfully assist the teacher with their task.
+system: You are a very knowledgeable AI Assistant that will faithfully assist the user with their task.
 
-introduction: Develop question and answer pairs from a chapter in a {domain} textbook.
+introduction: Develop a series of educational question and answer pairs from a chapter in a {domain} textbook. 
 
 principles: |
-  Here are the requirements:
-  1. Try not to repeat the verb for each question to maximize diversity.
-  2. The language used for the question also should be diverse. For example, you should combine questions with imperative questions.
-  3. The type of questions should be similar to provided examples. The generated question and the answer should be grounded in the provided document.
-  4. The questions should be 1 to 2 sentences long. Either an imperative sentence or a question is permitted.
-  5. The answer be an appropriate response to the input and the question. Long answers are preferable.
+  The questions should:
+  * Be self-contained, not requiring references to tables, figures, or specific sections in the text for understanding.
+  * Focus on teaching and reinforcing the key knowledge and concepts presented in the chapter.
+  * Avoid sections with minimal educational content like index pages or prefaces. In such cases, respond with [UNANSWERABLE].
+  * Be directly relevant to the textbook's domain. For instance, in a science textbook, questions should revolve around scientific terms, definitions, and practical applications, while in a legal textbook, they should cover legal principles, case law, and precedents.
+  * Be formulated to allow for independent answers, avoiding direct references to specific theorems or text sections. For example, rather than asking 'Under what conditions is the fixed point of a function unique according to Theorem 3.1.5?', ask 'How does the Fixed Point Iteration method contribute to understanding function uniqueness?'
+  * Span a range of difficulty levels to accommodate a diverse student audience, from basic understanding to advanced comprehension.
+  * Include a variety of question types such as multiple-choice for basic recall, short answer for deeper understanding, and essay or problem-solving questions to test application and analysis skills.
+  * Align closely with the learning objectives of the textbook or the specific chapter, ensuring that the questions test the fundamental concepts and skills that the chapter aims to impart.
+
+  Strictly follow this format for each question answer pair your generate while responding
+
+  [QUESTION]
+  <Insert question here>
+  [ANSWER]
+  <Insert answer here>
+  [END]
+
+
+  Each question and answer pair should stand alone as a mini-lesson, encapsulating a key concept or idea from the chapter in a way that is accessible and informative without requiring the reader to refer back to the textbook. The question and answer should be in the same languages as the seed examples.
 
 examples: |
-  Here is a sample section of the document as an example:
-  Document: {icl_document}
+  Here are some examples of questions:
 
-  Here are some examples to help you understand the type of question and answers that are to be generated for this document:
+  [Document]
+  {icl_document}
 
-  Question: {icl_query_1}
-  Answer: {icl_response_1}
+  [QUESTION]
+  {icl_query_1}
+  [ANSWER]
+  {icl_response_1}
+  [END]
 
-  Question: {icl_query_2}
-  Answer: {icl_response_2}
+  [QUESTION]
+  {icl_query_2}
+  [ANSWER]
+  {icl_response_2}
+  [END]
 
-  Question: {icl_query_3}
-  Answer: {icl_response_3}
-
-  Here is the document:
-
-  Document: {document}
+  [QUESTION]
+  {icl_query_3}
+  [ANSWER]
+  {icl_response_3}
+  [END]
 
 generation: |
-  Provide a single question and answer pair based on the document.
+  Here is the document:
 
-start_tags: [""]
-end_tags: [""]
+  [DOCUMENT]
+  {document_outline}
+  {document}
