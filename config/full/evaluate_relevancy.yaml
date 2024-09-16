@@ -15,11 +15,11 @@ principles: |
 examples: |
   Example 1:
   [Start of Question]
-  What is the impact of global warming on polar bears?
+  ग्लोबल वार्मिंग का पोलर बियर पर क्या प्रभाव पड़ता है?
   [End of Question]
 
   [Start of Response]
-  Global warming leads to melting ice caps, reducing the habitat of polar bears and negatively impacting their hunting grounds.
+  ग्लोबल वार्मिंग से बर्फ की चादरें पिघलने लगती हैं, जिससे पोलर बियर का आवास घटता है और उनके शिकार क्षेत्र पर नकारात्मक प्रभाव पड़ता है।
   [End of Response]
 
   [Start of Feedback]
@@ -33,11 +33,11 @@ examples: |
 
   Example 2:
   [Start of Question]
-  How does photosynthesis work?
+  फोटोसिंथेसिस कैसे काम करता है?
   [End of Question]
 
   [End of Response]
-  Plants require sunlight and water to grow.
+  पौधों को बढ़ने के लिए सूर्य की रोशनी और पानी की आवश्यकता होती है।
   [End of Response]
 
   [Start of Feedback]
@@ -52,11 +52,11 @@ examples: |
 
   Example 3:
   [Start of Question]
-  What are the benefits of electric vehicles?
+  इलेक्ट्रिक वाहनों के क्या लाभ हैं?
   [End of Question]
 
   [Start of Response]
-  Electric vehicles reduce dependency on fossil fuels and decrease greenhouse gas emissions.
+  इलेक्ट्रिक गाड़ियां फॉसिल फ्यूल्स पर निर्भरता कम कर देती हैं और ग्रीनहाउस गैसों का इमिशन भी घटा देती हैं।
   [End of Response]
 
   [Start of Feedback]

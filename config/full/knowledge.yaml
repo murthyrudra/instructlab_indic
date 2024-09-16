@@ -58,7 +58,7 @@ blocks:
   - name: eval_verify_question
     type: LLMBlock
     config:
-      config_path: ../../configs/knowledge/evaluate_question.yaml
+      config_path: /dccstor/cssblr/rmurthyv/IBM/InstructLab/instructlab/config/full/evaluate_question.yaml
       output_cols:
         - explanation
         - rating
@@ -75,9 +75,3 @@ blocks:
       - explanation
       - rating
       - __index_level_0__
-
-datamixing:
-  auxiliary_instructions:
-    spellcheck:
-      - Correct any spelling errors in the document and output the corrected version.
-      - Rewrite the document to remove any spelling errors.

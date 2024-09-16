@@ -443,6 +443,12 @@ def train(
     test_file = effective_data_dir / "test_gen.jsonl"
     ckpt_output_dir = Path(kwargs["ckpt_output_dir"])
 
+    if not os.path.exists(train_file):
+        import glob
+        train_file = glob.glob(os.path.join(effective_data_dir, "train_*.jsonl"))[0]
+        test_file = glob.glob(os.path.join(effective_data_dir, "test_*.jsonl"))[0]
+        print(f"Loading dataset from file {train_file}")
+
     # NOTE: If given a data_dir, input-dir is ignored in favor of existing!
     if not data_path or data_path.strip() == DEFAULTS.DATASETS_DIR and not strategy:
         data_path = str(effective_data_dir)
@@ -523,8 +529,8 @@ def train(
         # PyTorch safetensors to MLX safetensors
         model_dir_local = model_path.replace("/", "-")
         model_dir_local = f"{ckpt_output_dir}/{model_dir_local}"
-        model_dir_mlx = f"{model_dir_local}-mlx"
-        model_dir_mlx_quantized = f"{model_dir_local}-mlx-q"
+        model_dir_mlx = f"{ckpt_output_dir}-mlx"
+        model_dir_mlx_quantized = f"{ckpt_output_dir}-mlx-q"
 
         if skip_quantize:
             dest_model_dir = model_dir_mlx

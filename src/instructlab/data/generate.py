@@ -299,8 +299,7 @@ def generate(
 
     # Specify checkpoint dir if batching is enabled
     checkpoint_dir = None
-    if batch_size > 0:
-        checkpoint_dir = os.path.join(output_dir, "checkpoints")
+    checkpoint_dir = os.path.join(output_dir, "checkpoints")
 
     try:
         click.echo(
