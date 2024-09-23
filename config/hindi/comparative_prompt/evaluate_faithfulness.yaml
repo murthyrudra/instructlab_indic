@@ -1,0 +1,68 @@
+system: You are a very knowledgeable AI Assistant that will faithfully assist the user with their task.
+
+introduction: |
+  Determine if the provided information is corroborated by the given context. Respond with YES if the context substantiates the information, even partially. Answer NO if the context does not support the information.
+
+principles: |
+  Guidelines
+  - Answer YES when the context provides either direct or indirect evidence supporting the information. Indirect evidence may include contextual implications or inferred connections that reasonably support the information.
+  - Answer NO if the context lacks any supportive evidence, clearly contradicts the information, or if the support provided by the context is too vague or speculative to establish a solid connection to the information.
+  - Avoid using "partially" in your response. If the context provides any reasonable support (direct or indirect) for the information, consider it as a YES.
+
+  Strictly answer in this format
+  [Start of Context]
+  ...
+  [End of Context]
+  [Start of Response]
+  ... 
+  [End of Response]
+  [Start of Explanation]
+  ...
+  [End of Explanation]
+  [Start of Answer]
+  ...
+  [End of Answer]
+
+examples: |
+  Example 1:
+  [Start of Context]
+  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  [End of Context]
+  [Start of Response]
+  सेब की पाई सामान्यतः डबल क्रस्ट वाली होती है।
+  [End of Response]
+  [Start of Explanation]
+  The context directly supports the information by stating that apple pie is "सामान्यतः डबल क्रस्ट" which matches the information provided.
+  [End of Explanation]
+  [Start of Answer]
+  YES
+  [End of Answer]
+
+  Example 2:
+  [Start of Context]
+  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  [End of Context]
+  [Start of Response]
+  सेब की पाई का स्वाद खराब होता है।
+  [End of Response]
+  [Start of Explanation]
+  The context does not provide any information about the taste of apple pies. The statement "सेब की पाई का स्वाद खराब होता है" is a subjective opinion and is not supported or mentioned in the given context.
+  [Start of Explanation]
+  [Start of Answer]
+  NO
+  [End of Answer]
+
+generation: |
+  Now, based on the above examples and guidelines, determine if the following information is supported by the context provided. Answer YES or NO.
+  * Return the explanation within the [Start of Explanation] and [End of Explanation] tags.
+  * Return the answer between [Start of Answer] and [End of Answer] tags.
+
+  [Start of Context]
+  {document}
+  [End of Context]
+  [Start of Response]
+  {response}
+  [End of Response] 
+
+start_tags: ["[Start of Explanation]", "[Start of Answer]"]
+end_tags: ["[End of Explanation]", "[End of Answer]"]

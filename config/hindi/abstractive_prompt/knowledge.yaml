@@ -3,7 +3,7 @@ blocks:
   - name: gen_knowledge
     type: LLMBlock
     config:
-      config_path: /dccstor/cssblr/rmurthyv/IBM/InstructLab/instructlab/config/indic_generate_template.yaml
+      config_path: config/abstractive_prompt/indic_generate_abstractive.yaml
       output_cols:
         - question
         - response
