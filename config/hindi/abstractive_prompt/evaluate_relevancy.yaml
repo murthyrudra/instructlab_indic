@@ -15,16 +15,16 @@ principles: |
 examples: |
   Example 1:
   [Start of Question]
-  ग्लोबल वार्मिंग का पोलर बियर पर क्या प्रभाव पड़ता है?
+  चुम्बकत्व क्या है, और यह किस प्रकार की प्रक्रिया को दर्शाता है?
   [End of Question]
 
   [Start of Response]
-  ग्लोबल वार्मिंग से बर्फ की चादरें पिघलने लगती हैं, जिससे पोलर बियर का आवास घटता है और उनके शिकार क्षेत्र पर नकारात्मक प्रभाव पड़ता है।
+  चुम्बकत्व एक ऐसी प्रक्रिया है जिसमें एक वस्तु दूसरी वस्तु पर आकर्षण या प्रतिकर्षण बल लगाती है। इसे भौतिकी में एक महत्वपूर्ण गुण माना जाता है, जो चुम्बकत्व का प्रदर्शन करने वाली वस्तुओं में पाया जाता है।
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response is directly related to the impact of global warming on polar bears.)
-  - Alignment with Query's Focus Score: 1 (The response specifically addresses how global warming affects polar bears' habitat and hunting grounds.)
+  - Subject Matter Relevance Score: 1 (The response directly relates to the subject of the query, which is "चुम्बकत्व" (magnetism).)
+  - Alignment with Query's Focus Score: 0 (The query asks not only about "चुम्बकत्व" but also specifically about the "प्रक्रिया" (process) it represents.)
   [End of Feedback]
 
   [Start of Score]
@@ -33,16 +33,16 @@ examples: |
 
   Example 2:
   [Start of Question]
-  फोटोसिंथेसिस कैसे काम करता है?
+  चुम्बकत्व क्या है, और यह किस प्रकार की प्रक्रिया को दर्शाता है?
   [End of Question]
 
   [End of Response]
-  पौधों को बढ़ने के लिए सूर्य की रोशनी और पानी की आवश्यकता होती है।
+  चुम्बक का उपयोग कई प्रकार के उपकरणों में किया जाता है, जैसे इलेक्ट्रिक मोटर, ट्रांसफार्मर, और मैग्नेटिक रेसोनेंस इमेजिंग (MRI) मशीन में। चुम्बकत्व का यह व्यावहारिक उपयोग उद्योगों और चिकित्सा में महत्वपूर्ण भूमिका निभाता है।
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 0 (The response is related to plant growth, but does not specifically address the process of photosynthesis.)
-  - Alignment with Query's Focus Score: 0 (The response fails to detail the photosynthesis process, missing the specific focus of the query.)
+  - Subject Matter Relevance Score: 0 (The response discusses practical applications of magnets in various devices like electric motors and MRI machines, but it does not address the query's main subject, which is "चुम्बकत्व" (magnetism) or the process it represents. )
+  - Alignment with Query's Focus Score: 0 (The query specifically asks for an explanation of what magnetism is and the type of process it represents. The response does not provide any explanation or discussion about the nature of magnetism or its underlying process. Instead, it only lists the uses of magnets in devices, which is not aligned with the query's focus.)
   [End of Feedback]
 
   [Start of Score]
@@ -52,16 +52,16 @@ examples: |
 
   Example 3:
   [Start of Question]
-  इलेक्ट्रिक वाहनों के क्या लाभ हैं?
+  चुम्बकत्व क्या है, और यह किस प्रकार की प्रक्रिया को दर्शाता है?
   [End of Question]
 
   [Start of Response]
-  इलेक्ट्रिक गाड़ियां फॉसिल फ्यूल्स पर निर्भरता कम कर देती हैं और ग्रीनहाउस गैसों का इमिशन भी घटा देती हैं।
+  चुम्बकत्व एक ऐसी प्रक्रिया है, जिसमें एक वस्तु दूसरी वस्तु पर आकर्षण या प्रतिकर्षण बल लगाती है। इस प्रक्रिया में चुम्बक जैसी वस्तुएं, जैसे लोहा, निकल, कोबाल्ट आदि, एक चुम्बकीय क्षेत्र उत्पन्न करती हैं, जो अन्य वस्तुओं को अपनी ओर खींच सकती हैं या उनसे दूर धकेल सकती हैं। चुम्बकत्व के इस गुण के कारण, वस्तुएं चुम्बकीय क्षेत्र की उपस्थिति से प्रभावित होती हैं।
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response matches the query's subject on the benefits of electric vehicles.)
-  - Alignment with Query's Focus Score: 1 (The response effectively addresses the environmental benefits of electric vehicles, aligning with the query's focus.)
+  - Subject Matter Relevance Score: 1 (The response is directly related to the subject of the query, "चुम्बकत्व" (magnetism). It provides an explanation of magnetism, defining it as a process involving attraction or repulsion between objects, which is relevant to the topic.)
+  - Alignment with Query's Focus Score: 1 (The response effectively addresses the specific perspective of the query, which asks for an explanation of the process represented by magnetism. The response explains how objects like iron, nickel, and cobalt generate a magnetic field, which in turn causes attraction or repulsion. This explanation aligns with the focus of the question, covering both the concept of magnetism and the process it involves.)
   [End of Feedback]
 
   [Start of Score]
