@@ -15,16 +15,20 @@ principles: |
 examples: |
   Example 1:
   [Start of Question]
-  ग्लोबल वार्मिंग का पोलर बियर पर क्या प्रभाव पड़ता है?
+  कौन से पदार्थ मजबूत चुंबकीय गुण प्रदर्शित करते हैं?
   [End of Question]
 
   [Start of Response]
-  ग्लोबल वार्मिंग से बर्फ की चादरें पिघलने लगती हैं, जिससे पोलर बियर का आवास घटता है और उनके शिकार क्षेत्र पर नकारात्मक प्रभाव पड़ता है।
+  मजबूत चुंबकीय गुण प्रदर्शित करने वाले पदार्थ:
+  * निकल
+  * लोहा
+  * कोबाल्ट
+  * उनके मिश्रधातुएँ
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response is directly related to the impact of global warming on polar bears.)
-  - Alignment with Query's Focus Score: 1 (The response specifically addresses how global warming affects polar bears' habitat and hunting grounds.)
+  - Subject Matter Relevance Score: 1 (The response directly addresses materials with strong magnetic properties, which is the exact subject of the query.)
+  - Alignment with Query's Focus Score: 1 (The response provides a specific list of materials exhibiting strong magnetic properties, fully addressing the focus of the query.)
   [End of Feedback]
 
   [Start of Score]
@@ -33,39 +37,44 @@ examples: |
 
   Example 2:
   [Start of Question]
-  फोटोसिंथेसिस कैसे काम करता है?
+  रक्त के मुख्य घटक क्या हैं?
   [End of Question]
 
-  [End of Response]
-  पौधों को बढ़ने के लिए सूर्य की रोशनी और पानी की आवश्यकता होती है।
+  [Start of Response]
+  रक्त के कुछ घटक:
+  * प्लाज्मा
+  * लाल रक्त कोशिकाएँ
+  * हीमोग्लोबिन
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 0 (The response is related to plant growth, but does not specifically address the process of photosynthesis.)
-  - Alignment with Query's Focus Score: 0 (The response fails to detail the photosynthesis process, missing the specific focus of the query.)
+  - Subject Matter Relevance Score: 1 (The response is related to the components of blood, which matches the subject matter of the query.)
+  - Alignment with Query's Focus Score: 0 (While the response lists some blood components, it misses key components like white blood cells and platelets, and includes hemoglobin which is a part of red blood cells rather than a separate main component. Thus, it doesn't fully address the focus of the query on main components.)
+  [End of Feedback]
+
+  [Start of Score]
+  1
+  [End of Score]
+
+  Example 3:
+  [Start of Question]
+  परमाणु के नाभिक के घटक क्या हैं?
+  [End of Question]
+
+  [Start of Response]
+  परमाणु की संरचना:
+  * इलेक्ट्रॉन
+  * ऑर्बिटल्स
+  * इलेक्ट्रॉन शेल
+  [End of Response]
+
+  [Start of Feedback]
+  - Subject Matter Relevance Score: 0 (The response discusses atomic structure but does not specifically address the components of the nucleus, which is the subject of the query.)
+  - Alignment with Query's Focus Score: 0 (The response lists parts of an atom's electron structure, completely missing the focus on nuclear components like protons and neutrons.)
   [End of Feedback]
 
   [Start of Score]
   0
-  [End of Score]
-
-
-  Example 3:
-  [Start of Question]
-  इलेक्ट्रिक वाहनों के क्या लाभ हैं?
-  [End of Question]
-
-  [Start of Response]
-  इलेक्ट्रिक गाड़ियां फॉसिल फ्यूल्स पर निर्भरता कम कर देती हैं और ग्रीनहाउस गैसों का इमिशन भी घटा देती हैं।
-  [End of Response]
-
-  [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response matches the query's subject on the benefits of electric vehicles.)
-  - Alignment with Query's Focus Score: 1 (The response effectively addresses the environmental benefits of electric vehicles, aligning with the query's focus.)
-  [End of Feedback]
-
-  [Start of Score]
-  2
   [End of Score]
 
 generation: |

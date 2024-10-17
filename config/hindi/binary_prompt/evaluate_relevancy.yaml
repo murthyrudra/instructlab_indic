@@ -1,5 +1,3 @@
-system: You are a very knowledgeable AI Assistant that will faithfully assist the user with their task.
-
 introduction: |
   Your task is to assess the relevance of a given response to a specific query. This evaluation should be conducted methodically by answering two key questions:
 
@@ -15,16 +13,16 @@ principles: |
 examples: |
   Example 1:
   [Start of Question]
-  ग्लोबल वार्मिंग का पोलर बियर पर क्या प्रभाव पड़ता है?
+  क्या रक्तकण तीन प्रकार के होते हैं?
   [End of Question]
 
   [Start of Response]
-  ग्लोबल वार्मिंग से बर्फ की चादरें पिघलने लगती हैं, जिससे पोलर बियर का आवास घटता है और उनके शिकार क्षेत्र पर नकारात्मक प्रभाव पड़ता है।
+  हाँ
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response is directly related to the impact of global warming on polar bears.)
-  - Alignment with Query's Focus Score: 1 (The response specifically addresses how global warming affects polar bears' habitat and hunting grounds.)
+  - Subject Matter Relevance Score: 1 (The response directly addresses the question about the types of blood cells.)
+  - Alignment with Query's Focus Score: 1 (The response confirms that there are three types of blood cells.)
   [End of Feedback]
 
   [Start of Score]
@@ -33,39 +31,38 @@ examples: |
 
   Example 2:
   [Start of Question]
-  फोटोसिंथेसिस कैसे काम करता है?
+  क्या प्रोटॉन का द्रव्यमान इलेक्ट्रॉन के द्रव्यमान से 1845 गुना अधिक होता है?
   [End of Question]
 
-  [End of Response]
-  पौधों को बढ़ने के लिए सूर्य की रोशनी और पानी की आवश्यकता होती है।
+  [Start of Response]
+  हाँ, प्रोटॉन का द्रव्यमान इलेक्ट्रॉन से बहुत अधिक होता है।
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 0 (The response is related to plant growth, but does not specifically address the process of photosynthesis.)
-  - Alignment with Query's Focus Score: 0 (The response fails to detail the photosynthesis process, missing the specific focus of the query.)
+  - Subject Matter Relevance Score: 1 (The response is directly related to the comparison of proton and electron masses.)
+  - Alignment with Query's Focus Score: 0 (While the response confirms that the proton's mass is much greater, it doesn't specifically address the 1845 times factor mentioned in the query.)
+  [End of Feedback]
+
+  [Start of Score]
+  1
+  [End of Score]
+
+  Example 3:
+  [Start of Question]
+  क्या दिल्ली के लोहे के स्तंभ में 99.72 प्रतिशत लोहा है?
+  [End of Question]
+
+  [Start of Response]
+  दिल्ली का लोहे का स्तंभ एक प्राचीन स्मारक है जो कई शताब्दियों से खड़ा है।
+  [End of Response]
+
+  [Start of Feedback]
+  - Subject Matter Relevance Score: 0 (The response mentions the iron pillar in Delhi but doesn't address its composition.)
+  - Alignment with Query's Focus Score: 0 (The response fails to answer the specific question about the iron content percentage.)
   [End of Feedback]
 
   [Start of Score]
   0
-  [End of Score]
-
-
-  Example 3:
-  [Start of Question]
-  इलेक्ट्रिक वाहनों के क्या लाभ हैं?
-  [End of Question]
-
-  [Start of Response]
-  इलेक्ट्रिक गाड़ियां फॉसिल फ्यूल्स पर निर्भरता कम कर देती हैं और ग्रीनहाउस गैसों का इमिशन भी घटा देती हैं।
-  [End of Response]
-
-  [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response matches the query's subject on the benefits of electric vehicles.)
-  - Alignment with Query's Focus Score: 1 (The response effectively addresses the environmental benefits of electric vehicles, aligning with the query's focus.)
-  [End of Feedback]
-
-  [Start of Score]
-  2
   [End of Score]
 
 generation: |

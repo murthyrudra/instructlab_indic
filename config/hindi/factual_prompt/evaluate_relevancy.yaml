@@ -15,16 +15,16 @@ principles: |
 examples: |
   Example 1:
   [Start of Question]
-  ग्लोबल वार्मिंग का पोलर बियर पर क्या प्रभाव पड़ता है?
+  जब एक वस्तु दूसरी वस्तु पर आकर्षण या प्रतिकर्षण बल डालती है, तो इस प्रक्रिया को क्या कहा जाता है?
   [End of Question]
 
   [Start of Response]
-  ग्लोबल वार्मिंग से बर्फ की चादरें पिघलने लगती हैं, जिससे पोलर बियर का आवास घटता है और उनके शिकार क्षेत्र पर नकारात्मक प्रभाव पड़ता है।
+  चुंबकत्व
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response is directly related to the impact of global warming on polar bears.)
-  - Alignment with Query's Focus Score: 1 (The response specifically addresses how global warming affects polar bears' habitat and hunting grounds.)
+  - Subject Matter Relevance Score: 1 (The response directly addresses the subject matter of the query by stating that the process of one object exerting an attraction or repulsion force on another is called "चुंबकत्व" (magnetism). This accurately reflects the topic of the question.)
+  - Alignment with Query's Focus Score: 1 (The response effectively addresses the specific focus of the query, which seeks to identify the term for the process of attraction or repulsion between objects. By providing the correct term, "चुंबकत्व," the response meets the user's request directly.)
   [End of Feedback]
 
   [Start of Score]
@@ -33,16 +33,16 @@ examples: |
 
   Example 2:
   [Start of Question]
-  फोटोसिंथेसिस कैसे काम करता है?
+  जब एक वस्तु दूसरी वस्तु पर आकर्षण या प्रतिकर्षण बल डालती है, तो इस प्रक्रिया को क्या कहा जाता है?
   [End of Question]
 
   [End of Response]
-  पौधों को बढ़ने के लिए सूर्य की रोशनी और पानी की आवश्यकता होती है।
+  निकल, लोहा, कोबाल्ट और उनके मिश्र धातुओं में आसानी से पहचानने योग्य चुंबकीय गुण होते हैं
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 0 (The response is related to plant growth, but does not specifically address the process of photosynthesis.)
-  - Alignment with Query's Focus Score: 0 (The response fails to detail the photosynthesis process, missing the specific focus of the query.)
+  - Subject Matter Relevance Score: 0 (The response does not directly address the subject matter of the query, which asks for the term describing the process of one object exerting an attraction or repulsion force on another. Instead, it provides information about the magnetic properties of certain metals, which is unrelated to the main topic of the question.)
+  - Alignment with Query's Focus Score: 0 (The response fails to address the specific focus of the question. It does not provide the term that describes the process of attraction or repulsion, which is what the user is seeking. Instead, it diverts to discussing materials with magnetic properties, missing the core inquiry.)
   [End of Feedback]
 
   [Start of Score]
@@ -52,20 +52,20 @@ examples: |
 
   Example 3:
   [Start of Question]
-  इलेक्ट्रिक वाहनों के क्या लाभ हैं?
+  जब एक वस्तु दूसरी वस्तु पर आकर्षण या प्रतिकर्षण बल डालती है, तो इस प्रक्रिया को क्या कहा जाता है?
   [End of Question]
 
   [Start of Response]
-  इलेक्ट्रिक गाड़ियां फॉसिल फ्यूल्स पर निर्भरता कम कर देती हैं और ग्रीनहाउस गैसों का इमिशन भी घटा देती हैं।
+  आकर्षण और प्रतिकर्षण
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response matches the query's subject on the benefits of electric vehicles.)
-  - Alignment with Query's Focus Score: 1 (The response effectively addresses the environmental benefits of electric vehicles, aligning with the query's focus.)
+  - Subject Matter Relevance Score: 1 (The response addresses the subject matter of the query by stating "आकर्षण और प्रतिकर्षण," which refers to the forces involved when one object interacts with another. This is relevant to the process described in the question.)
+  - Alignment with Query's Focus Score: 0 (While the terms "आकर्षण" (attraction) and "विकर्षण" (repulsion) are relevant, the response does not provide the specific term or concept that describes the overall process of one object exerting these forces on another, which was asked for in the query. It lacks the clarity needed to fully address the user's request.)
   [End of Feedback]
 
   [Start of Score]
-  2
+  1
   [End of Score]
 
 generation: |

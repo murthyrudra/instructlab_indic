@@ -15,16 +15,16 @@ principles: |
 examples: |
   Example 1:
   [Start of Question]
-  ग्लोबल वार्मिंग का पोलर बियर पर क्या प्रभाव पड़ता है?
+  क्या आप चुंबकत्व की प्रक्रिया और यह आकर्षण और विकर्षण दोनों के संदर्भ में वस्तुओं को कैसे प्रभावित करता है, समझा सकते हैं?
   [End of Question]
 
   [Start of Response]
-  ग्लोबल वार्मिंग से बर्फ की चादरें पिघलने लगती हैं, जिससे पोलर बियर का आवास घटता है और उनके शिकार क्षेत्र पर नकारात्मक प्रभाव पड़ता है।
+  चुंबकत्व वह प्रक्रिया है जिसके द्वारा एक वस्तु दूसरी वस्तु पर या तो आकर्षण या विकर्षण बल लगाती है। यह बल उन वस्तुओं के चुंबकीय गुणों का परिणाम होता है। जिन वस्तुओं में ये गुण होते हैं उन्हें चुंबक कहा जाता है। चुंबकीय क्षेत्र की उपस्थिति सभी वस्तुओं को प्रभावित करती है, जिसका प्रभाव उनकी सामग्री की संरचना और चुंबकीय क्षेत्र की शक्ति पर निर्भर करता है।
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response is directly related to the impact of global warming on polar bears.)
-  - Alignment with Query's Focus Score: 1 (The response specifically addresses how global warming affects polar bears' habitat and hunting grounds.)
+  - Subject Matter Relevance Score: 1 (The response accurately addresses the subject matter of the query by explaining "चुंबकत्व" (magnetism) as a process involving attraction or repulsion between objects. It mentions that this force results from the magnetic properties of certain materials, aligning well with the topic of the question.)
+  - Alignment with Query's Focus Score: 1 (The response effectively addresses the query's specific focus by explaining how magnetism influences objects in terms of attraction and repulsion. It discusses the role of magnetic properties and the impact of the magnetic field on all objects, which directly relates to the user's request for understanding how magnetism affects objects in these contexts.)
   [End of Feedback]
 
   [Start of Score]
@@ -33,39 +33,39 @@ examples: |
 
   Example 2:
   [Start of Question]
-  फोटोसिंथेसिस कैसे काम करता है?
+  क्या आप चुंबकत्व की प्रक्रिया और यह आकर्षण और विकर्षण दोनों के संदर्भ में वस्तुओं को कैसे प्रभावित करता है, समझा सकते हैं?
   [End of Question]
 
   [End of Response]
-  पौधों को बढ़ने के लिए सूर्य की रोशनी और पानी की आवश्यकता होती है।
+  चुंबकत्व के अध्ययन में कई महत्वपूर्ण सिद्धांत और प्रयोग शामिल हैं। उदाहरण के लिए, जब किसी वस्तु को चुंबकीय क्षेत्र में रखा जाता है, तो उसका व्यवहार उस क्षेत्र की दिशा और ताकत पर निर्भर करता है। विभिन्न धातुएं, जैसे निकल और लोहा, अलग-अलग प्रकार के चुंबकीय गुण दिखाती हैं। इसके अलावा, विभिन्न तापमान और स्थितियों में वस्तुओं का चुम्बकीय गुण भी बदल सकता है, जो भौतिकी के लिए एक दिलचस्प अध्ययन का विषय है।
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 0 (The response is related to plant growth, but does not specifically address the process of photosynthesis.)
-  - Alignment with Query's Focus Score: 0 (The response fails to detail the photosynthesis process, missing the specific focus of the query.)
+  - Subject Matter Relevance Score: 1 (The response addresses the subject matter of the query regarding the process of magnetism and its effects on objects. It discusses how an object's behavior in a magnetic field depends on the direction and strength of that field, which is relevant to the concept of magnetism.)
+  - Alignment with Query's Focus Score: 0 (While the response provides useful information about magnetism and its properties, it does not directly address how magnetism affects objects in terms of attraction and repulsion, which is a key part of the original question. Instead, it focuses on the study of magnetism and the behavior of materials in magnetic fields, missing the specific focus on attraction and repulsion dynamics.)
   [End of Feedback]
 
   [Start of Score]
-  0
+  1
   [End of Score]
 
 
   Example 3:
   [Start of Question]
-  इलेक्ट्रिक वाहनों के क्या लाभ हैं?
+  क्या आप चुंबकत्व की प्रक्रिया और यह आकर्षण और विकर्षण दोनों के संदर्भ में वस्तुओं को कैसे प्रभावित करता है, समझा सकते हैं?
   [End of Question]
 
   [Start of Response]
-  इलेक्ट्रिक गाड़ियां फॉसिल फ्यूल्स पर निर्भरता कम कर देती हैं और ग्रीनहाउस गैसों का इमिशन भी घटा देती हैं।
+  चॉकलेट के विभिन्न प्रकार और उनके स्वाद को लेकर लोगों के बीच हमेशा चर्चा रहती है। दूध चॉकलेट, डार्क चॉकलेट और व्हाइट चॉकलेट, हर एक का अपना खास स्थान है। कुछ लोग चॉकलेट को मिठाई के रूप में पसंद करते हैं, जबकि अन्य इसे बेकिंग में उपयोग करते हैं। चॉकलेट का इतिहास भी बहुत रोचक है, जो सदियों से चलता आ रहा है।
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response matches the query's subject on the benefits of electric vehicles.)
-  - Alignment with Query's Focus Score: 1 (The response effectively addresses the environmental benefits of electric vehicles, aligning with the query's focus.)
+  - Subject Matter Relevance Score: 0 (The response does not address the subject matter of the query about magnetism at all. Instead, it discusses various types of chocolate and their flavors, which is completely unrelated to the concept of "चुंबकत्व" (magnetism). Therefore, it does not match the main topic of the question.)
+  - Alignment with Query's Focus Score: 0 (The response fails to address the specific focus of the question, which asks about the process of magnetism and its effects in terms of attraction and repulsion. The information provided is irrelevant to the user's request and does not engage with any aspect of magnetism.)
   [End of Feedback]
 
   [Start of Score]
-  2
+  0
   [End of Score]
 
 generation: |

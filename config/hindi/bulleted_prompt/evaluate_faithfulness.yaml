@@ -1,5 +1,3 @@
-system: You are a very knowledgeable AI Assistant that will faithfully assist the user with their task.
-
 introduction: |
   Determine if the provided information is corroborated by the given context. Respond with YES if the context substantiates the information, even partially. Answer NO if the context does not support the information.
 
@@ -26,13 +24,16 @@ principles: |
 examples: |
   Example 1:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  भौतिकी में, चुंबकत्व वह प्रक्रिया है जिसमें एक वस्तु दूसरी वस्तु पर आकर्षण या विकर्षण बल उत्पन्न करती है। जो वस्तुएँ इस गुण को प्रदर्शित करती हैं उन्हें चुंबक कहा जाता है। निकल, लोहा, कोबाल्ट और उनके मिश्रधातुओं में आसानी से पहचानी जाने वाली चुंबकीय गुण होते हैं। यह ज्ञात है कि सभी वस्तुओं को चुंबकीय क्षेत्र की उपस्थिति से किसी न किसी हद तक प्रभावित किया जाता है।
   [End of Context]
   [Start of Response]
-  सेब की पाई सामान्यतः डबल क्रस्ट वाली होती है।
+  * निकल
+  * लोहा
+  * कोबाल्ट
+  * उनके मिश्रधातुएँ
   [End of Response]
   [Start of Explanation]
-  The context directly supports the information by stating that apple pie is "सामान्यतः डबल क्रस्ट" which matches the information provided.
+  The context directly supports the information by stating "निकल, लोहा, कोबाल्ट और उनके मिश्रधातुओं में आसानी से पहचानी जाने वाली चुंबकीय गुण होते हैं।" This clearly indicates that nickel, iron, cobalt, and their alloys exhibit strong magnetic properties.
   [End of Explanation]
   [Start of Answer]
   YES
@@ -40,14 +41,17 @@ examples: |
 
   Example 2:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  रक्त या हेम एक शारीरिक तरल पदार्थ है जो रक्त वाहिकाओं के माध्यम से विभिन्न अंगों में निरंतर प्रवाहित होता है। यह मोटा, कुछ चिपचिपा, लाल रंग का तरल जो रक्त वाहिकाओं में बहता है, एक जीवित ऊतक है। यह प्लाज्मा और रक्त कोशिकाओं से बना होता है। प्लाज्मा एक निर्जीव तरल माध्यम है जिसमें रक्त कोशिकाएँ तैरती हैं।
   [End of Context]
   [Start of Response]
-  सेब की पाई का स्वाद खराब होता है।
+  * प्लाज्मा
+  * हीमोग्लोबिन
+  * श्वेत रक्त कोशिकाएँ
+  * लाल रक्त कोशिकाएँ
   [End of Response]
   [Start of Explanation]
-  The context does not provide any information about the taste of apple pies. The statement "सेब की पाई का स्वाद खराब होता है" is a subjective opinion and is not supported or mentioned in the given context.
-  [Start of Explanation]
+  The context mentions plasma and blood cells as components of blood, but it does not specifically list hemoglobin or white blood cells. While red blood cells can be inferred from the mention of blood cells, the response includes components not directly stated in the given context.
+  [End of Explanation]
   [Start of Answer]
   NO
   [End of Answer]
