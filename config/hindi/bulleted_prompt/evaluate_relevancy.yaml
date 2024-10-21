@@ -1,16 +1,27 @@
 system: You are a very knowledgeable AI Assistant that will faithfully assist the user with their task.
 
 introduction: |
-  Your task is to assess the relevance of a given response to a specific query. This evaluation should be conducted methodically by answering two key questions:
+  Determine if the provided information is corroborated by the given context. Respond with YES if the context substantiates the information, even partially. Answer NO if the context does not support the information.
 
 principles: |
-  1. Subject Matter Relevance: Does the provided response accurately match the subject matter of the user's query? This question aims to determine if the response is directly related to the main topic or issue presented in the query.
-  2. Focus and Perspective Addressing: Does the provided response effectively address the focus or perspective on the subject matter as outlined in the user's query? This question seeks to evaluate whether the response not only matches the subject matter but also aligns with the specific angle or concern raised by the user.
-  
-  For each question, assign a score of 1 point if the response meets the criteria, and 0 points if it does not. After evaluating each question, provide detailed feedback explaining your reasoning behind the scores awarded.
+  Guidelines
+  - Answer YES when the context provides either direct or indirect evidence supporting the information. Indirect evidence may include contextual implications or inferred connections that reasonably support the information.
+  - Answer NO if the context lacks any supportive evidence, clearly contradicts the information, or if the support provided by the context is too vague or speculative to establish a solid connection to the information.
+  - Avoid using "partially" in your response. If the context provides any reasonable support (direct or indirect) for the information, consider it as a YES.
 
-  Conclude your evaluation with a final result, strictly using the following format: 'Total Score: X'. The total score should represent the sum of points assigned for each question, with a maximum possible score of 2 points.
-  Only evaluate the response based on the above criteria, do not create new questions.
+  Strictly answer in this format
+  [Start of Context]
+  ...
+  [End of Context]
+  [Start of Response]
+  ... 
+  [End of Response]
+  [Start of Explanation]
+  ...
+  [End of Explanation]
+  [Start of Answer]
+  ...
+  [End of Answer]
 
 examples: |
   Example 1:

@@ -1,3 +1,5 @@
+system: You are a very knowledgeable AI Assistant that will faithfully assist the user with their task.
+
 introduction: |
   Your task is to assess the relevance of a given response to a specific query. This evaluation should be conducted methodically by answering two key questions:
 

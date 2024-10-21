@@ -1,3 +1,5 @@
+system: You are a very knowledgeable AI Assistant that will faithfully assist the user with their task.
+
 introduction: |
   Determine if the provided information is corroborated by the given context. Respond with YES if the context substantiates the information, even partially. Answer NO if the context does not support the information.
 
