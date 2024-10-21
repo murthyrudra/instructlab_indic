@@ -4,7 +4,7 @@ set -o errexit
 MODEL_ID=meta-llama/Meta-Llama-3.1-70B-Instruct
 # MODEL_ID=mistralai/Mixtral-8x7B-Instruct-v0.1
 # number of GPUs needed
-NUM_GPUS=2
+NUM_GPUS=4
 set -o nounset
 
 # get a random valid port
