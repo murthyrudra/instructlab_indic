@@ -15,16 +15,20 @@ principles: |
 examples: |
   Example 1:
   [Start of Question]
-  ग्लोबल वार्मिंग का पोलर बियर पर क्या प्रभाव पड़ता है?
+  "चुम्बकत्व क्या है?
+  a) एक रासायनिक प्रतिक्रिया
+  b) एक वस्तु द्वारा दूसरी वस्तु पर लगाया गया आकर्षण या प्रतिकर्षण बल
+  c) एक जैविक प्रक्रिया
+  d) एक प्रकाश प्रक्रिया"
   [End of Question]
 
   [Start of Response]
-  ग्लोबल वार्मिंग से बर्फ की चादरें पिघलने लगती हैं, जिससे पोलर बियर का आवास घटता है और उनके शिकार क्षेत्र पर नकारात्मक प्रभाव पड़ता है।
+  "b) एक वस्तु द्वारा दूसरी वस्तु पर लगाया गया आकर्षण या प्रतिकर्षण बल"
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response is directly related to the impact of global warming on polar bears.)
-  - Alignment with Query's Focus Score: 1 (The response specifically addresses how global warming affects polar bears' habitat and hunting grounds.)
+  - Subject Matter Relevance Score: 1 (The response directly addresses the subject matter of the query, which is asking about the correct description of "चुम्बकत्व" (magnetism). The option "b" is the correct answer that defines magnetism as a force of attraction or repulsion between objects, matching the query's topic.)
+  - Alignment with Query's Focus Score: 1 (The query is asking for the correct option from a list, and the response provides the correct option ("b"). It accurately and effectively addresses the specific focus of the query, which is to identify the proper definition of magnetism.)
   [End of Feedback]
 
   [Start of Score]
@@ -33,40 +37,26 @@ examples: |
 
   Example 2:
   [Start of Question]
-  फोटोसिंथेसिस कैसे काम करता है?
+  "चुम्बकत्व क्या है?
+  a) एक रासायनिक प्रतिक्रिया
+  b) एक वस्तु द्वारा दूसरी वस्तु पर लगाया गया आकर्षण या प्रतिकर्षण बल
+  c) एक जैविक प्रक्रिया
+  d) एक प्रकाश प्रक्रिया"
   [End of Question]
 
-  [End of Response]
-  पौधों को बढ़ने के लिए सूर्य की रोशनी और पानी की आवश्यकता होती है।
+  [Start of Response]
+  a) एक रासायनिक प्रतिक्रिया
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 0 (The response is related to plant growth, but does not specifically address the process of photosynthesis.)
-  - Alignment with Query's Focus Score: 0 (The response fails to detail the photosynthesis process, missing the specific focus of the query.)
+  - Subject Matter Relevance Score: 0 (The response does not accurately address the subject matter of the query. The option "a" describes a chemical reaction, which is unrelated to the concept of "चुम्बकत्व" (magnetism). Therefore, it does not match the main topic of the question.)
+  - Alignment with Query's Focus Score: 0 (The query specifically asks for the correct definition of magnetism among the provided options. By selecting "a," the response fails to address the focus of the question, which seeks the appropriate description of magnetism. Instead, it misidentifies magnetism with an incorrect option.)
   [End of Feedback]
 
   [Start of Score]
   0
   [End of Score]
 
-
-  Example 3:
-  [Start of Question]
-  इलेक्ट्रिक वाहनों के क्या लाभ हैं?
-  [End of Question]
-
-  [Start of Response]
-  इलेक्ट्रिक गाड़ियां फॉसिल फ्यूल्स पर निर्भरता कम कर देती हैं और ग्रीनहाउस गैसों का इमिशन भी घटा देती हैं।
-  [End of Response]
-
-  [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response matches the query's subject on the benefits of electric vehicles.)
-  - Alignment with Query's Focus Score: 1 (The response effectively addresses the environmental benefits of electric vehicles, aligning with the query's focus.)
-  [End of Feedback]
-
-  [Start of Score]
-  2
-  [End of Score]
 
 generation: |
   Begin your response by providing the feedback followed by the score. Be as objective as possible.

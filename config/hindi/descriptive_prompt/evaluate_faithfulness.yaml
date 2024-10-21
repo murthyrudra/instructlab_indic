@@ -47,7 +47,35 @@ examples: |
   [End of Response]
   [Start of Explanation]
   The context does not provide any information about the taste of apple pies. The statement "सेब की पाई का स्वाद खराब होता है" is a subjective opinion and is not supported or mentioned in the given context.
+  [End of Explanation]
+  [Start of Answer]
+  NO
+  [End of Answer]
+
+  Example 3:
+  [Start of Context]
+  ग्लोबल वार्मिंग से बर्फ की चादरें पिघलने लगती हैं, जिससे पोलर बियर का आवास घटता है और उनके शिकार क्षेत्र पर नकारात्मक प्रभाव पड़ता है।
+  [End of Context]
+  [Start of Response]
+  पोलर बियर का आवास ग्लोबल वार्मिंग से घट रहा है।
+  [End of Response]
   [Start of Explanation]
+  The context mentions that polar bear habitat decreases due to melting ice, directly supporting the information.
+  [End of Explanation]
+  [Start of Answer]
+  YES
+  [End of Answer]
+
+  Example 4:
+  [Start of Context]
+  फोटोसिंथेसिस वह प्रक्रिया है जिससे पौधे सूर्य के प्रकाश की ऊर्जा का उपयोग करके भोजन का निर्माण करते हैं।
+  [End of Context]
+  [Start of Response]
+  पौधों को बढ़ने के लिए सूर्य की रोशनी और पानी की आवश्यकता होती है।
+  [End of Response]
+  [Start of Explanation]
+  While the context discusses photosynthesis, it does not mention the specific need for water in plant growth. Therefore, the response is not fully substantiated by the context.
+  [End of Explanation]
   [Start of Answer]
   NO
   [End of Answer]
@@ -62,7 +90,8 @@ generation: |
   [End of Context]
   [Start of Response]
   {response}
-  [End of Response] 
 
 start_tags: ["[Start of Explanation]", "[Start of Answer]"]
 end_tags: ["[End of Explanation]", "[End of Answer]"]
+
+version: 3

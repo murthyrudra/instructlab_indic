@@ -26,13 +26,13 @@ principles: |
 examples: |
   Example 1:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  भौतिकी में, चुम्बकत्व वह प्रक्रिया है जिसमें एक वस्तु दूसरी वस्तु पर आकर्षण या विकर्षण बल लगाती है। जो वस्तुएं इस गुण को प्रदर्शित करती हैं, उन्हें चुम्बक कहा जाता है। निकल, लोहा, कोबाल्ट और उनके मिश्र धातुओं में आसानी से पहचानी जाने वाली चुम्बकीय गुण होते हैं। यह ज्ञात है कि सभी वस्तुएं किसी न किसी सीमा तक चुम्बकीय क्षेत्र की उपस्थिति से प्रभावित होती हैं।
   [End of Context]
   [Start of Response]
-  सेब की पाई सामान्यतः डबल क्रस्ट वाली होती है।
+  लोहा और कोबाल्ट चुम्बकीय गुणों के लिए जाने जाते हैं।
   [End of Response]
   [Start of Explanation]
-  The context directly supports the information by stating that apple pie is "सामान्यतः डबल क्रस्ट" which matches the information provided.
+  The context directly supports the information by stating that लोहा and कोबाल्ट have easily recognizable magnetic properties.
   [End of Explanation]
   [Start of Answer]
   YES
@@ -40,14 +40,28 @@ examples: |
 
   Example 2:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  मनुष्यों को प्राचीन काल से ही लोहे के बारे में जानकारी थी। ईसा पूर्व 300-400 वर्षों में भारत के लोगों को लोहे के उपयोग के बारे में जानकारी थी। तमिलनाडु राज्य के तिन्नेवेली जिले, कर्नाटक के ब्रह्मगिरी और तक्षशिला में पुरातात्विक काल के लोहे के हथियार आदि पाए गए हैं, जो लगभग 400 वर्षों से ईसा पूर्व के माने जाते हैं। दिल्ली के कुतुब मीनार के सामने विशाल लोहे का स्तंभ चौथी शताब्दी में पुष्करना, राजस्थान के राजा चंद्रवर्मन के काल में बनाया गया था।
   [End of Context]
   [Start of Response]
-  सेब की पाई का स्वाद खराब होता है।
+  विशाल लोहे का स्तंभ भारत की प्राचीन धातुकला का एक उदाहरण है।
   [End of Response]
   [Start of Explanation]
-  The context does not provide any information about the taste of apple pies. The statement "सेब की पाई का स्वाद खराब होता है" is a subjective opinion and is not supported or mentioned in the given context.
+  The context supports the information by providing details about the विशाल लोहे का स्तंभ being an example of ancient metallurgy in India, mentioning its construction in the चौथी शताब्दी and its remarkable preservation.
+  [End of Explanation]
+  [Start of Answer]
+  YES
+  [End of Answer]
+
+  Example 3:
+  [Start of Context]
+  रक्त या हीम एक शारीरिक तरल है जो रक्त वाहिकाओं के माध्यम से विभिन्न अंगों में लगातार प्रवाहित होता है। यह मोटा, कुछ चिपचिपा, लाल रंग का तरल, जो रक्त वाहिकाओं में बहता है, एक जीवित ऊतक है। यह प्लाज्मा और रक्त कोशिकाओं से बना होता है।
+  [End of Context]
+  [Start of Response]
+  रक्त सफेद रंग का होता है।
+  [End of Response]
   [Start of Explanation]
+  The context clearly contradicts the information, stating that blood is लाल रंग का तरल. Therefore, the statement "रक्त सफेद रंग का होता है" is incorrect.
+  [End of Explanation]
   [Start of Answer]
   NO
   [End of Answer]

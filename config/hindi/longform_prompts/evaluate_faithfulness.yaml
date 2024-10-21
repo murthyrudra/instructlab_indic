@@ -26,13 +26,13 @@ principles: |
 examples: |
   Example 1:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  भौतिकी में, चुंबकत्व वह प्रक्रिया है जिसमें एक वस्तु दूसरी वस्तु पर आकर्षण या विकर्षण बल लगाती है। जिन वस्तुओं में यह गुण होता है उन्हें चुंबक कहा जाता है। निकल, लोहा, कोबाल्ट और उनकी मिश्र धातुएं आसानी से पहचानने योग्य चुंबकीय गुण प्रदर्शित करती हैं। यह ज्ञात है कि सभी वस्तुएं चुंबकीय क्षेत्र की उपस्थिति से कुछ हद तक प्रभावित होती हैं।
   [End of Context]
   [Start of Response]
-  सेब की पाई सामान्यतः डबल क्रस्ट वाली होती है।
+  चुंबकत्व वह प्रक्रिया है जिसके द्वारा एक वस्तु दूसरी वस्तु पर या तो आकर्षण या विकर्षण बल लगाती है। यह बल उन वस्तुओं के चुंबकीय गुणों का परिणाम होता है। जिन वस्तुओं में ये गुण होते हैं उन्हें चुंबक कहा जाता है। चुंबकीय क्षेत्र की उपस्थिति सभी वस्तुओं को प्रभावित करती है, जिसका प्रभाव उनकी सामग्री की संरचना और चुंबकीय क्षेत्र की शक्ति पर निर्भर करता है।
   [End of Response]
   [Start of Explanation]
-  The context directly supports the information by stating that apple pie is "सामान्यतः डबल क्रस्ट" which matches the information provided.
+  The provided information is corroborated by the context. The context describes magnetism as the process where one object exerts an attractive or repulsive force on another, which is mirrored in the response. Both discuss the magnetic properties of certain materials and the influence of magnetic fields on all objects, thus establishing a clear connection between the two
   [End of Explanation]
   [Start of Answer]
   YES
@@ -40,13 +40,13 @@ examples: |
 
   Example 2:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  भौतिकी में, चुंबकत्व वह प्रक्रिया है जिसमें एक वस्तु दूसरी वस्तु पर आकर्षण या विकर्षण बल लगाती है। जिन वस्तुओं में यह गुण होता है उन्हें चुंबक कहा जाता है। निकल, लोहा, कोबाल्ट और उनकी मिश्र धातुएं आसानी से पहचानने योग्य चुंबकीय गुण प्रदर्शित करती हैं। यह ज्ञात है कि सभी वस्तुएं चुंबकीय क्षेत्र की उपस्थिति से कुछ हद तक प्रभावित होती हैं।
   [End of Context]
   [Start of Response]
-  सेब की पाई का स्वाद खराब होता है।
+  चॉकलेट के विभिन्न प्रकार और उनके स्वाद को लेकर लोगों के बीच हमेशा चर्चा रहती है। दूध चॉकलेट, डार्क चॉकलेट और व्हाइट चॉकलेट, हर एक का अपना खास स्थान है। कुछ लोग चॉकलेट को मिठाई के रूप में पसंद करते हैं, जबकि अन्य इसे बेकिंग में उपयोग करते हैं। चॉकलेट का इतिहास भी बहुत रोचक है, जो सदियों से चलता आ रहा है।
   [End of Response]
   [Start of Explanation]
-  The context does not provide any information about the taste of apple pies. The statement "सेब की पाई का स्वाद खराब होता है" is a subjective opinion and is not supported or mentioned in the given context.
+  NO, the provided information is not corroborated by the context. The context discusses magnetism, the forces between objects, and the properties of certain magnetic materials, while the response shifts to a completely different topic about chocolate and its varieties. There is no connection between the two subjects in the information provided.
   [Start of Explanation]
   [Start of Answer]
   NO

@@ -26,13 +26,13 @@ principles: |
 examples: |
   Example 1:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  भौतिकी में, चुंबकत्व वह प्रक्रिया है जिसमें एक वस्तु दूसरी वस्तु पर आकर्षण या प्रतिकर्षण बल डालती है। जिन वस्तुओं में यह गुण होता है उन्हें चुंबक कहा जाता है। निकल, लोहा, कोबाल्ट और उनके मिश्र धातुओं में आसानी से पहचानने योग्य चुंबकीय गुण होते हैं। यह ज्ञात है कि सभी वस्तुएं कम या ज्यादा हद तक चुंबकीय क्षेत्र की उपस्थिति से प्रभावित होती हैं।
   [End of Context]
   [Start of Response]
-  सेब की पाई सामान्यतः डबल क्रस्ट वाली होती है।
+  निकल, लोहा, कोबाल्ट
   [End of Response]
   [Start of Explanation]
-  The context directly supports the information by stating that apple pie is "सामान्यतः डबल क्रस्ट" which matches the information provided.
+  The provided information is corroborated by the context. The context specifically mentions nickel, iron, and cobalt as materials that exhibit recognizable magnetic properties, which directly aligns with the response listing these materials.
   [End of Explanation]
   [Start of Answer]
   YES
@@ -40,13 +40,13 @@ examples: |
 
   Example 2:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  भौतिकी में, चुंबकत्व वह प्रक्रिया है जिसमें एक वस्तु दूसरी वस्तु पर आकर्षण या प्रतिकर्षण बल डालती है। जिन वस्तुओं में यह गुण होता है उन्हें चुंबक कहा जाता है। निकल, लोहा, कोबाल्ट और उनके मिश्र धातुओं में आसानी से पहचानने योग्य चुंबकीय गुण होते हैं। यह ज्ञात है कि सभी वस्तुएं कम या ज्यादा हद तक चुंबकीय क्षेत्र की उपस्थिति से प्रभावित होती हैं।
   [End of Context]
   [Start of Response]
-  सेब की पाई का स्वाद खराब होता है।
+  लोहा, निकल और कोबाल्ट ही एकमात्र शुद्ध पदार्थ हैं
   [End of Response]
   [Start of Explanation]
-  The context does not provide any information about the taste of apple pies. The statement "सेब की पाई का स्वाद खराब होता है" is a subjective opinion and is not supported or mentioned in the given context.
+  The provided information is not corroborated by the context. While the context mentions iron, nickel, and cobalt as materials with recognizable magnetic properties, it does not support the claim that they are the only pure substances. The statement in the response is not substantiated by the context provided.
   [Start of Explanation]
   [Start of Answer]
   NO

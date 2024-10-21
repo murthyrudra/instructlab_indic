@@ -1,5 +1,3 @@
-system: You are a very knowledgeable AI Assistant that will faithfully assist the user with their task.
-
 introduction: |
   Determine if the provided information is corroborated by the given context. Respond with YES if the context substantiates the information, even partially. Answer NO if the context does not support the information.
 
@@ -26,13 +24,15 @@ principles: |
 examples: |
   Example 1:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  प्रोटॉन एक मूलभूत कण है जिसमें सकारात्मक विद्युत आवेश होता है, जो न्यूट्रॉन के साथ परमाणु के नाभिक में पाया जाता है। इसे p प्रतीक द्वारा दर्शाया जाता है। इसका सकारात्मक आवेश 1.0602E-19 कूलंब होता है। इसका द्रव्यमान 1.6726E-27 किलोग्राम है, जो इलेक्ट्रॉन के द्रव्यमान से लगभग 1845 गुना अधिक होता है।
   [End of Context]
   [Start of Response]
-  सेब की पाई सामान्यतः डबल क्रस्ट वाली होती है।
+  प्रोटॉन का द्रव्यमान इलेक्ट्रॉन के द्रव्यमान से लगभग 1845 गुना अधिक होता है।
+  प्रोटॉन का द्रव्यमान इलेक्ट्रॉनों की तुलना में परमाणु के द्रव्यमान का अधिकांश योगदान करता है।
+  इलेक्ट्रॉनों का द्रव्यमान प्रोटॉनों की तुलना में नगण्य होता है।
   [End of Response]
   [Start of Explanation]
-  The context directly supports the information by stating that apple pie is "सामान्यतः डबल क्रस्ट" which matches the information provided.
+  The context directly supports the first point by stating "इसका द्रव्यमान 1.6726E-27 किलोग्राम है, जो इलेक्ट्रॉन के द्रव्यमान से लगभग 1845 गुना अधिक होता है।" This confirms that the proton's mass is about 1845 times greater than an electron's mass. The second and third points are logical inferences from this information, as the much greater mass of protons would contribute significantly more to the atom's mass, making the electron's mass negligible in comparison.
   [End of Explanation]
   [Start of Answer]
   YES
@@ -40,14 +40,32 @@ examples: |
 
   Example 2:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  रक्त या हेम एक शारीरिक द्रव है जो रक्त वाहिकाओं के माध्यम से विभिन्न अंगों में लगातार प्रवाहित होता है। यह मोटा, कुछ चिपचिपा, लाल रंग का तरल रक्त वाहिकाओं में बहता है और एक जीवित ऊतक है। यह प्लाज्मा और रक्त कोशिकाओं से बना होता है। प्लाज्मा वह निर्जीव तरल माध्यम है जिसमें रक्त कोशिकाएँ तैरती हैं।
   [End of Context]
   [Start of Response]
-  सेब की पाई का स्वाद खराब होता है।
+  लाल रक्त कोशिकाएँ श्वसन अंगों से ऑक्सीजन पूरे शरीर में ले जाती हैं और फेफड़ों में कार्बन डाइऑक्साइड को वापस ले जाती हैं।
+  श्वेत रक्त कोशिकाएँ शरीर को हानिकारक पदार्थों और रोग पैदा करने वाले कीटाणुओं से बचाती हैं।
+  लाल रक्त कोशिकाएँ मुख्य रूप से ऑक्सीजन परिवहन में शामिल होती हैं, जबकि श्वेत रक्त कोशिकाएँ प्रतिरक्षा प्रतिक्रिया में शामिल होती हैं।
   [End of Response]
   [Start of Explanation]
-  The context does not provide any information about the taste of apple pies. The statement "सेब की पाई का स्वाद खराब होता है" is a subjective opinion and is not supported or mentioned in the given context.
+  The context mentions that blood is composed of plasma and blood cells, which indirectly supports the existence of red and white blood cells. However, the specific functions of these cells, such as oxygen transport and immune response, are not mentioned in the given context. The response provides details about the roles of red and white blood cells that go beyond the information provided in the context.
+  [End of Explanation]
+  [Start of Answer]
+  NO
+  [End of Answer]
+
+  Example 3:
+  [Start of Context]
+  हर परमाणु एक नाभिक से बना होता है और नाभिक के चारों ओर एक या अधिक इलेक्ट्रॉन होते हैं। नाभिक आमतौर पर एक या अधिक न्यूट्रॉन और समान संख्या में प्रोटॉन से बना होता है। प्रोटॉन और न्यूट्रॉन को न्यूक्लियॉन कहा जाता है। परमाणु का 99.94% से अधिक द्रव्यमान नाभिक में होता है।
+  [End of Context]
+  [Start of Response]
+  विद्युतचुंबकीय बल इलेक्ट्रॉनों को प्रोटॉनों की ओर आकर्षित करता है, जो परमाणु को एक साथ बनाए रखता है।
+  परमाणु बल नाभिक के भीतर प्रोटॉनों और न्यूट्रॉनों को एक साथ बांधता है।
+  परमाणु बल आमतौर पर विद्युतचुंबकीय बल से अधिक मजबूत होता है।
+  [End of Response]
   [Start of Explanation]
+  The context provides information about the structure of atoms, including the nucleus and electrons. However, it does not mention any information about electromagnetic forces or nuclear forces. The response discusses specific forces (electromagnetic and nuclear) and their relative strengths, which are not present in the given context. The information in the response, while potentially accurate, is not supported by the provided context.
+  [End of Explanation]
   [Start of Answer]
   NO
   [End of Answer]

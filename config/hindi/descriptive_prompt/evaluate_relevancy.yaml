@@ -6,7 +6,7 @@ introduction: |
 principles: |
   1. Subject Matter Relevance: Does the provided response accurately match the subject matter of the user's query? This question aims to determine if the response is directly related to the main topic or issue presented in the query.
   2. Focus and Perspective Addressing: Does the provided response effectively address the focus or perspective on the subject matter as outlined in the user's query? This question seeks to evaluate whether the response not only matches the subject matter but also aligns with the specific angle or concern raised by the user.
-  
+
   For each question, assign a score of 1 point if the response meets the criteria, and 0 points if it does not. After evaluating each question, provide detailed feedback explaining your reasoning behind the scores awarded.
 
   Conclude your evaluation with a final result, strictly using the following format: 'Total Score: X'. The total score should represent the sum of points assigned for each question, with a maximum possible score of 2 points.
@@ -36,36 +36,35 @@ examples: |
   फोटोसिंथेसिस कैसे काम करता है?
   [End of Question]
 
-  [End of Response]
+  [Start of Response]
   पौधों को बढ़ने के लिए सूर्य की रोशनी और पानी की आवश्यकता होती है।
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 0 (The response is related to plant growth, but does not specifically address the process of photosynthesis.)
-  - Alignment with Query's Focus Score: 0 (The response fails to detail the photosynthesis process, missing the specific focus of the query.)
+  - Subject Matter Relevance Score: 1 (The response touches on plant growth, which is related to photosynthesis.)
+  - Alignment with Query's Focus Score: 0 (The response does not explain how photosynthesis works, missing the specific mechanism or details requested in the query.)
+  [End of Feedback]
+
+  [Start of Score]
+  1
+  [End of Score]
+
+  Example 3:
+  [Start of Question]
+  चुंबकत्व के अध्ययन में निकेल, लोहा और कोबाल्ट का महत्व क्यों है, समझाइए।
+  [End of Question]
+
+  [Start of Response]
+  चुंबकत्व उस प्रक्रिया को कहा जाता है जिसमें वस्तुएं आकर्षण या विकर्षण बल का अनुभव करती हैं।
+  [End of Response]
+
+  [Start of Feedback]
+  - Subject Matter Relevance Score: 0 (The response gives a general definition of magnetism but does not mention nickel, iron, or cobalt, which is the specific focus of the question.)
+  - Alignment with Query's Focus Score: 0 (The response does not address the importance of nickel, iron, or cobalt in magnetism as asked by the query.)
   [End of Feedback]
 
   [Start of Score]
   0
-  [End of Score]
-
-
-  Example 3:
-  [Start of Question]
-  इलेक्ट्रिक वाहनों के क्या लाभ हैं?
-  [End of Question]
-
-  [Start of Response]
-  इलेक्ट्रिक गाड़ियां फॉसिल फ्यूल्स पर निर्भरता कम कर देती हैं और ग्रीनहाउस गैसों का इमिशन भी घटा देती हैं।
-  [End of Response]
-
-  [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (The response matches the query's subject on the benefits of electric vehicles.)
-  - Alignment with Query's Focus Score: 1 (The response effectively addresses the environmental benefits of electric vehicles, aligning with the query's focus.)
-  [End of Feedback]
-
-  [Start of Score]
-  2
   [End of Score]
 
 generation: |
@@ -83,3 +82,5 @@ generation: |
   * Return the final score between [Start of Score] and [End of Score] tags.
 start_tags: ["[Start of Feedback]", "[Start of Score]"]
 end_tags: ["[End of Feedback]", "[End of Score]"]
+
+version: 3

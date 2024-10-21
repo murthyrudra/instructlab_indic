@@ -9,7 +9,7 @@ principles: |
   - Answer NO if the context lacks any supportive evidence, clearly contradicts the information, or if the support provided by the context is too vague or speculative to establish a solid connection to the information.
   - Avoid using "partially" in your response. If the context provides any reasonable support (direct or indirect) for the information, consider it as a YES.
 
-  Strictly answer in this format
+  Strictly answer in this format:
   [Start of Context]
   ...
   [End of Context]
@@ -26,13 +26,13 @@ principles: |
 examples: |
   Example 1:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  भौतिकी में चुम्बकत्व वह प्रक्रिया है, जिसमें एक वस्तु दूसरी वस्तु पर आकर्षण या प्रतिकर्षण बल लगाती है। जो वस्तुएँ यह गुण प्रदर्शित करती हैं, उन्हें चुम्बक कहते हैं। निकल, लोहा, कोबाल्ट एवं उनके मिश्रण आदि सरलता से पहचाने जाने योग्य चुम्बकीय गुण रखते हैं। ज्ञातव्य है कि सब वस्तुएं न्यूनाधिक मात्रा में चुम्बकीय क्षेत्र की उपस्थिति से प्रभावित होती हैं।
   [End of Context]
   [Start of Response]
-  सेब की पाई सामान्यतः डबल क्रस्ट वाली होती है।
+  क्या सभी वस्तुएं चुम्बकीय क्षेत्र से प्रभावित होती हैं?
   [End of Response]
   [Start of Explanation]
-  The context directly supports the information by stating that apple pie is "सामान्यतः डबल क्रस्ट" which matches the information provided.
+  The context clearly states that "सब वस्तुएं न्यूनाधिक मात्रा में चुम्बकीय क्षेत्र की उपस्थिति से प्रभावित होती हैं," which directly supports the claim that all objects are affected by the magnetic field to some extent.
   [End of Explanation]
   [Start of Answer]
   YES
@@ -40,14 +40,14 @@ examples: |
 
   Example 2:
   [Start of Context]
-  सेब की पाई एक प्रकार की फ्रूट पाई होती है जिसमें मुख्य सामग्री के रूप में सेब होते हैं। इसे अक्सर व्हिप्ड क्रीम, आइसक्रीम, कस्टर्ड, या चेडर चीज़ के साथ परोसा जाता है। सामान्यतः इसमें डबल क्रस्ट होता है, जिसमें पेस्ट्री भरावन के ऊपर और नीचे होती है। ऊपर वाला क्रस्ट ठोस हो सकता है या फिर जालीदार।
+  भौतिकी में चुम्बकत्व वह प्रक्रिया है, जिसमें एक वस्तु दूसरी वस्तु पर आकर्षण या प्रतिकर्षण बल लगाती है। जो वस्तुएँ यह गुण प्रदर्शित करती हैं, उन्हें चुम्बक कहते हैं। निकल, लोहा, कोबाल्ट एवं उनके मिश्रण आदि सरलता से पहचाने जाने योग्य चुम्बकीय गुण रखते हैं। ज्ञातव्य है कि सब वस्तुएं न्यूनाधिक मात्रा में चुम्बकीय क्षेत्र की उपस्थिति से प्रभावित होती हैं।
   [End of Context]
   [Start of Response]
-  सेब की पाई का स्वाद खराब होता है।
+  क्या चुम्बकत्व में केवल आकर्षण बल लगता है?
   [End of Response]
   [Start of Explanation]
-  The context does not provide any information about the taste of apple pies. The statement "सेब की पाई का स्वाद खराब होता है" is a subjective opinion and is not supported or mentioned in the given context.
-  [Start of Explanation]
+  The context mentions both "आकर्षण" (attraction) and "प्रतिकर्षण" (repulsion) forces as part of magnetism. Since the response suggests that only attraction is involved, it contradicts the provided context.
+  [End of Explanation]
   [Start of Answer]
   NO
   [End of Answer]
@@ -62,7 +62,7 @@ generation: |
   [End of Context]
   [Start of Response]
   {response}
-  [End of Response] 
+  [End of Response]
 
 start_tags: ["[Start of Explanation]", "[Start of Answer]"]
 end_tags: ["[End of Explanation]", "[End of Answer]"]
