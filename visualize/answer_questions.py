@@ -18,137 +18,136 @@ def format_text(obj):
 def format_text_prompt(obj):
     return f"""\
 <|system|>
-"I am, Hindi Instruct Model based on Sarvam 2B, an AI language model developed by Sarvam and fine-tuned by IBM Research, based onlama-3.1 70B Instruct language model. My primary function is to be able to answer Physics based questions."
+"I am, Hindi Instruct Model based on Sarvam 2B, an AI language model developed by Sarvam and fine-tuned by IBM Research, based on the Llama-3.1 70B Instruct language model. My primary function is to be able to answer Physics based questions."
 <|user|>
 {obj}
 <|assistant|>"""
 
 
 models = [
-    "meta-llama/Llama-3.2-1B",
-    "sarvamai/sarvam-2b-v0.5",
     "meta-llama/Llama-3.1-8B",
 ]
-models = models + glob("/dccstor/lm4si/rudra/models/llama_3.2_1B_instructlab/hf_step_*")
-models = models + glob(
-    "/dccstor/lm4si/rudra/models/sarvam-2b-v0.5_instructlab/hf_step_*"
+combined_models = models + glob(
+    "/dccstor/cssblr/rmurthyv/IBM/dolomite-engine/output/fine_tuned/Meta-Llama-3.1-8B_instructlab_InstructLabPhysics_v1/epoch_*"
 )
 
-combined_models = glob(
-    "/dccstor/lm4si/rudra/models/llama_3.2_1B_instructlab_combined/hf_step_*"
-)
 combined_models = combined_models + glob(
-    "/dccstor/lm4si/rudra/models/sarvam-2b-v0.5_instructlab_combined/hf_step_*"
+    "/dccstor/cssblr/rmurthyv/IBM/dolomite-engine/output/fine_tuned/Meta-Llama-3.1-8B_fullft_instructlab_InstructLabPhysics_v1/epoch*"
 )
-combined_models = combined_models + glob(
-    "/dccstor/lm4si/rudra/models/Llama-3.1-8B_instructlab_combined/hf_step_*"
-)
-combined_models = combined_models + glob(
-    "/dccstor/lm4si/rudra/models/Llama-3.1-8B_instructlab_ashish/hf_step*"
-)
+
 
 questions = [
-    "घर्षण बलों का पिण्डों की गति पर क्या प्रभाव पड़ता है?",
-    "उल्का पात के विषय में प्रचलित विविध मान्यताएँ किन प्रकार के वृतांतों से जुड़ी हुई हैं?\na) पुराकथाओं, प्राचीन पौराणिक तथा अर्धएतिहासिक वृतांतों और लोककथाओं\nb) वैज्ञानिक तथ्यों के बावजूद\nc) भविष्यसूचक विश्वासपरंपरा से आबद्ध फलित ज्योतिष\nd) आकाश की इस विलक्षण घटना के फलाफल का विधान",
-    "क्या चुम्बकत्व को एक प्रकार का प्राकृतिक बल माना जाता है जो वस्तुओं को एक दूसरे की ओर आकर्षित करता है?",
-    "अक्रिस्टलीय ठोस क्या होते हैं और उनकी विशेषताएं क्या हैं?",
-    "चिकित्सा भौतिकी में शोध का क्या महत्व है?",
-    "क्रांतिक ताप से कम ताप पर गैस को द्रव में बदलने के लिए क्या करना होता है?\na) दाब बढ़ाना\nb) ताप बढ़ाना\nc) दाब घटाना\nd) केवल दाब बढ़ाने से",
-    "वायुमंडलीय दाब पर हीलियम का क्वथनांक क्या है?\na) ०°K\nb) ४°K\nc) १०°K\nd) २०°K",
-    "एकसमान और असमान गति की परिभाषा दें। दोनों के उदाहरण दें।",
-    "चाल और वेग में अंतर बताइए।",
-    "न्यूटन का पहला गति नियम क्या है? एक उदाहरण देकर इसे समझाएँ।",
-    "जड़त्व की परिभाषा दें और इसके प्रकारों को समझाइए।",
-    "न्यूटन के तृतीय नियम की व्याख्या एक उदाहरण के साथ करें।",
-    "सार्वभौमिक गुरुत्वाकर्षण का नियम क्या है? इसके महत्व को समझाइए।",
-    "ऊँचाई के साथ गुरुत्वाकर्षण के त्वरण में क्या परिवर्तन होता है?",
-    "द्रव्यमान और भार में क्या अंतर है? एक उदाहरण के साथ समझाएँ।",
-    "मुक्त पतन की परिभाषा दें। यह गुरुत्वाकर्षण के त्वरण से कैसे संबंधित है?",
-    "कार्य की परिभाषा दें। क्या तब कार्य होता है जब एक आदमी अपने हाथ में सूटकेस लेकर चलता है? समझाएँ।",
-    "ऊर्जा संरक्षण के नियम को एक उदाहरण के साथ समझाएँ।",
-    "शक्ति और ऊर्जा में अंतर करें। शक्ति का सूत्र लिखें।",
+    "पृथ्वी की प्लेटों की सीमाओं पर भूकम्प आने की प्रवृत्ति क्यों होती है?",
+    "रिक्टर पैमाने पर भूकम्प की माप क्या बताता है?",
+    "दो विद्युत धारावाही चालकों के बीच चुंबकीय बल की प्रकृति क्या है, और इसकी खोज किसने की थी?",
+    "विद्युत धारावाही चालकों पर चुंबकीय बल की प्रकृति क्या है, और यह किन कारकों से प्रभावित होता है?",
+    "ऐम्पियर ने किस प्रकार के अध्ययन किए थे, और उनके अध्ययनों का क्या महत्व है?",
+    "प्लास्टर ऑफ पेरिस का रासायनिक सूत्र क्या है, और इसका निर्माण कैसे होता है?",
+    "अम्ल-क्षारक सूचक रंजक क्या होते हैं?",
+    "हर्ट्ज ने किस प्रकार की तरंगों की खोज की?",
+    "प्रकाश की प्रकृति क्या है?",
+    "रोटी बनाने की पूरी प्रक्रिया में कौन-कौन से लोग सम्मिलित होते हैं?",
+    "गैल्वेनोमीटर और ऐमीटर के बीच क्या मुख्य अंतर है, और इन दोनों को एक दूसरे में परिवर्तित करने के लिए किन संशोधनों की आवश्यकता होती है?",
+    "दक्षिण हस्त अंगुष्ठ नियम क्या है और इसका क्या महत्व है?",
+]
+
+paraphrase_questions = [
+    "भूकम्प पृथ्वी की प्लेटों की सीमाओं पर क्यों उत्पन्न होते हैं?",
+    "रिक्टर पैमाने पर भूकम्प की माप से हमें क्या जानकारी मिलती है?",
+    "दो विद्युत धारावाही चालकों के बीच चुंबकीय बल की विशेषताएँ क्या हैं, और इसकी खोज किसने की?",
+    "चुंबकीय बल की विशेषताएँ विद्युत धारावाही चालकों पर क्या होती हैं, और ये किन तत्वों से प्रभावित होती हैं?",
+    "ऐम्पियर ने किस तरह के शोध किए, और उनके कार्यों का क्या महत्व है?",
+    "प्लास्टर ऑफ पेरिस का रासायनिक सूत्र क्या है, और इसे कैसे बनाया जाता है?",
+    "अम्ल-क्षारक सूचक रंजक किसे कहते हैं?",
+    "हर्ट्ज ने किस प्रकार की तरंगों की खोज की थी?",
+    "प्रकाश की प्रकृति का क्या विवरण है?",
+    "रोटी बनाने की प्रक्रिया में कौन-कौन से लोग शामिल होते हैं?",
+    "गैल्वेनोमीटर और ऐमीटर में क्या प्रमुख अंतर है, और इन्हें एक-दूसरे में बदलने के लिए क्या परिवर्तन चाहिए?",
+    "दक्षिण हस्त अंगुष्ठ नियम क्या है और इसका क्या महत्व है?",
 ]
 
 gold_response = [
-    "घर्षण बल पिण्डों की गति का विरोध करते हैं। जब कोई पिण्ड गतिशील होता है, तो घर्षण बल उसकी गति को कम करने की कोशिश करता है और अन्ततः उसे रोक देता है। इसलिए, पिण्डों को गतिशील बनाए रखने हेतु घर्षण बलों को निष्फल करने हेतु बाह्य साधनों द्वारा बल लगाना आवश्यक होता है।",
-    "a) पुराकथाओं, प्राचीन पौराणिक तथा अर्धएतिहासिक वृतांतों और लोककथाओं\n\n",
-    "हाँ",
-    "अक्रिस्टलीय ठोस वे ठोस होते हैं जिनमें कणों की व्यवस्था निश्चित और नियमित नहीं होती है। इनमें लघु परास व्यवस्था पाई जाती है और इनका गलनांक अनिश्चित होता है। ये एक निश्चित ताप पर द्रव अवस्था में नहीं बदलते और ताप बढ़ाने पर धीरे-धीरे पिघलने लगते हैं।\n\n",
-    "चिकित्सा भौतिकी में शोध का महत्व यह है कि यह नई तकनीकों और तरीकों को विकसित करने में मदद करता है जो स्वास्थ्य देखभाल में सुधार करने में उपयोग किए जा सकते हैं। इससे रोगों का निदान और उपचार बेहतर ढंग से किया जा सकता है और मरीजों को बेहतर देखभाल प्रदान की जा सकती है।\n\n",
-    "d) केवल दाब बढ़ाने से \n\n",
-    "b) ४°K\n\n",
+    "पृथ्वी की प्लेटें एक दूसरे के सापेक्ष गति करती हैं और जब ये प्लेटें एक दूसरे से टकराती हैं या अलग होती हैं, तो इससे ऊर्जा का संचय होता है जो भूकम्प के रूप में निकलती है।\n\n",
+    "रिक्टर पैमाने पर भूकम्प की माप उसकी विनाशी ऊर्जा को दर्शाता है। 7 से अधिक माप वाले भूकम्प जीवन और सम्पत्ति की अपार क्षति कर सकते हैं।\n\n",
+    "दो विद्युत धारावाही चालकों के बीच चुंबकीय बल की प्रकृति ऐम्पियर द्वारा खोजी गई थी। ऐम्पियर ने सन् 1820-25 की अवधि में इस चुंबकीय बल की प्रकृति, इसकी विद्युत धारा के परिमाण, चालक की आकृति तथा आमाप पर निर्भरता के साथ इन चालकों के बीच की दूरी पर निर्भरता का अध्ययन किया।\n\n",
+    "विद्युत धारावाही चालकों पर चुंबकीय बल की प्रकृति बल आरोपित करने की होती है, जो उनकी विद्युत धारा, आकृति, दूरी, और उनकी स्थिति से प्रभावित होती है। यह बल लोरेंज बल सूत्र का अनुगमन करता है, जो विद्युत धारावाही चालकों के बीच की दूरी और उनकी विद्युत धारा के परिमाण पर निर्भर करता है।\n\n",
+    "ऐम्पियर ने दो विद्युत धारावाही चालकों के बीच के चुंबकीय बल की प्रकृति, इसकी विद्युत धारा के परिमाण, चालक की आकृति, आमाप, और इन चालकों के बीच की दूरी पर निर्भरता का अध्ययन किया था। उनके अध्ययनों का महत्व यह है कि उन्होंने चुंबकीय बल की प्रकृति और इसके कारकों को समझने में हमारी सहायता की है।\n\n",
+    "प्लास्टर ऑफ पेरिस का रासायनिक सूत्र CaSO .- HxO है। इसका निर्माण जिप्सम को 373 K पर गर्म करने से होता है। इस प्रक्रिया में, जिप्सम जल के अणुओं का त्याग कर कैल्सियम सल्फेट अर्धहाइड्रेट बनाता है।\n\n",
+    "अम्ल-क्षारक सूचक रंजक वे रंजक या रंजकों के मिश्रण होते हैं जिनका उपयोग अम्ल और क्षारक की उपस्थिति को सूचित करने के लिए किया जाता है।\n\n",
+    "हर्ट्ज ने रेडियो तरंगों की खोज की, जो विद्युत चुंबकीय तरंगों का एक प्रकार है।\n\n",
+    "प्रकाश वास्तव में विद्युत चुंबकीय तरंगें हैं। यह बात जेम्स मैक्सवेल ने अपने नए नियमों में स्पष्ट की थी और यह अनुभव किया गया कि प्रकाश विद्युत चुंबकीय तरंगों का रूप है।\n\n",
+    "रोटी बनाने की पूरी प्रक्रिया में किसान, मजदूर, व्यापारी, परिवहनकर्ता, आटा मिल के कर्मचारी, और घर के सदस्य जैसे कई लोग सम्मिलित होते हैं। इन सभी लोगों की मेहनत और योगदान से ही हमें रोटी मिलती है।\n\n",
+    "गैल्वेनोमीटर और ऐमीटर के बीच मुख्य अंतर यह है कि गैल्वेनोमीटर वोल्टता को मापने के लिए उपयोग किया जाता है, जबकि ऐमीटर धारा को मापने के लिए उपयोग किया जाता है। गैल्वेनोमीटर को ऐमीटर में परिवर्तित करने के लिए, इसमें एक शंट प्रतिरोध जोड़ा जाता है, जिससे धारा सुग्राहिता में वृद्धि होती है। इसके विपरीत, ऐमीटर को गैल्वेनोमीटर में परिवर्तित करने के लिए, इसमें एक प्रतिरोध जोड़ा जाता है, जिससे वोल्टता सुग्राहिता में वृद्धि होती है। ",
+    "दक्षिण हस्त अंगुष्ठ नियम एक नियम है जो विद्युत धारा की दिशा को ध्यान में रखते हुए चुंबकीय क्षेत्र की दिशा को निर्धारित करता है। इसका महत्व यह है कि यह हमें चुंबकीय क्षेत्र की दिशा को समझने में मदद करता है और इसका उपयोग विभिन्न विद्युत उपकरणों में किया जाता है।\n\n",
 ]
 
 answers_by_model = {}
+answers_by_model["is_paraphrase"] = []
+
+# Add questions and gold response
 answers_by_model["question"] = []
 for each_question in questions:
     answers_by_model["question"].append(each_question)
+    answers_by_model["is_paraphrase"].append(False)
+
+for each_question in paraphrase_questions:
+    answers_by_model["question"].append(each_question)
+    answers_by_model["is_paraphrase"].append(True)
 
 answers_by_model["gold_response"] = []
 for each_response in gold_response:
     answers_by_model["gold_response"].append(each_response)
+
+for each_response in gold_response:
+    answers_by_model["gold_response"].append(each_response)
+
 
 for index in range(
     len(answers_by_model["gold_response"]), len(answers_by_model["question"])
 ):
     answers_by_model["gold_response"].append("")
 
-for model_name in tqdm(models, desc="For each model"):
-    try:
-        tokenizer = AutoTokenizer.from_pretrained(model_name)
-        model = AutoModelForCausalLM.from_pretrained(model_name).to(device)
-        model.generation_config.pad_token_id = tokenizer.eos_token_id
+for model_name in tqdm(combined_models, desc="For each model"):
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForCausalLM.from_pretrained(model_name).to(device)
+    model.generation_config.pad_token_id = tokenizer.eos_token_id
 
-        answers_by_model[model_name] = []
+    answers_by_model[model_name] = []
 
-        for each_question in questions:
-            if "_instructlab" in model_name:
-                formatted_question = format_text(each_question)
-            else:
-                formatted_question = each_question
-            tokenized_chat = tokenizer(formatted_question, return_tensors="pt")
-            for each_key in tokenized_chat:
-                tokenized_chat[each_key] = tokenized_chat[each_key].to(device)
+    # Training data questions
+    for each_question in questions:
+        tokenized_chat = tokenizer(each_question, return_tensors="pt")
+        for each_key in tokenized_chat:
+            tokenized_chat[each_key] = tokenized_chat[each_key].to(device)
 
-            outputs = model.generate(
-                **tokenized_chat,
-                max_new_tokens=200,
-                pad_token_id=tokenizer.eos_token_id,
-            )
+        outputs = model.generate(
+            **tokenized_chat,
+            max_new_tokens=200,
+            pad_token_id=tokenizer.eos_token_id,
+        )
 
-            response = tokenizer.decode(outputs[0])
-            response = response.split(formatted_question)[-1]
+        response = tokenizer.decode(outputs[0])
+        response = response.split(each_question)[-1]
 
-            answers_by_model[model_name].append(response)
-    except:
-        pass
+        answers_by_model[model_name].append(response)
 
-for model_name in tqdm(combined_models, desc="For each combined model"):
-    try:
-        tokenizer = AutoTokenizer.from_pretrained(model_name)
-        model = AutoModelForCausalLM.from_pretrained(model_name).to(device)
-        model.generation_config.pad_token_id = tokenizer.pad_token_id
+    # Paraphrased questions
+    for each_question in paraphrase_questions:
+        tokenized_chat = tokenizer(each_question, return_tensors="pt")
+        for each_key in tokenized_chat:
+            tokenized_chat[each_key] = tokenized_chat[each_key].to(device)
 
-        answers_by_model[model_name] = []
+        outputs = model.generate(
+            **tokenized_chat,
+            max_new_tokens=200,
+            pad_token_id=tokenizer.eos_token_id,
+        )
 
-        for each_question in questions:
-            formatted_question = format_text_prompt(each_question)
-            tokenized_chat = tokenizer(formatted_question, return_tensors="pt")
-            for each_key in tokenized_chat:
-                tokenized_chat[each_key] = tokenized_chat[each_key].to(device)
+        response = tokenizer.decode(outputs[0])
+        response = response.split(each_question)[-1]
 
-            outputs = model.generate(
-                **tokenized_chat,
-                max_new_tokens=200,
-                pad_token_id=tokenizer.eos_token_id,
-            )
+        answers_by_model[model_name].append(response)
 
-            response = tokenizer.decode(outputs[0])
-            response = response.split(formatted_question)[-1]
-
-            answers_by_model[model_name].append(response)
-    except:
-        pass
 
 df = pd.DataFrame(answers_by_model)
 
