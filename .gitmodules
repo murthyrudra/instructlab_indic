@@ -1,0 +1,9 @@
+[submodule "taxonomy"]
+	path = taxonomy
+	url = git@github.com:murthyrudra/taxonomy_indic.git
+[submodule "sdg"]
+	path = sdg
+	url = git@github.com:murthyrudra/sdg_indic.git
+[submodule "schema"]
+	path = schema
+	url = git@github.com:murthyrudra/schema_indic.git
